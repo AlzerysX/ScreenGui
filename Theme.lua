@@ -1,8 +1,6 @@
 local httpService = game:GetService('HttpService')
 local ThemeManager = {} do
-ThemeManager.Folder = 'LinoriaLibSettings'
--- if not isfolder(ThemeManager.Folder) then makefolder(ThemeManager.Folder) end
-
+ThemeManager.Folder = "LinoriaLibSettings"
 ThemeManager.Library = nil
 ThemeManager.BuiltInThemes = {
     ['Default'] 		= { 1, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1c1c1c","AccentColor":"0055ff","BackgroundColor":"141414","OutlineColor":"323232"}') },
@@ -84,7 +82,6 @@ function ThemeManager:CreateThemeManager(groupbox)
     Options.ThemeManager_ThemeList:OnChanged(function()
         self:ApplyTheme(Options.ThemeManager_ThemeList.Value)
     end)
-    groupbox:AddDivider()
 
     local function UpdateTheme()
         self:ThemeUpdate()

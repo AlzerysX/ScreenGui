@@ -3,7 +3,7 @@ local ThemeManager = {} do
 ThemeManager.Folder = "LinoriaLibSettings"
 ThemeManager.Library = nil
 ThemeManager.BuiltInThemes = {
-    ['Default'] 		= { 1, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1c1c1c","AccentColor":"00ffdc","BackgroundColor":"141414","OutlineColor":"323232"}') },
+    ['Default'] 		= { 1, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1c1c1c","AccentColor":"00ffeb","BackgroundColor":"141414","OutlineColor":"323232"}') },
     ['Green'] 			= { 2, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"141414","AccentColor":"00ff8b","BackgroundColor":"1c1c1c","OutlineColor":"3c3c3c"}') },
     ['Night'] 	= { 3, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"191925","AccentColor":"6759b3","BackgroundColor":"16161f","OutlineColor":"323232"}') },
 }
